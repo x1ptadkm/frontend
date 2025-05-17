@@ -5,5 +5,4 @@ is an error message that appears when a webpage cannot be located. It usually me
 preview:
  ![](image/image.png)
 
-
 idea: code_wars_official
