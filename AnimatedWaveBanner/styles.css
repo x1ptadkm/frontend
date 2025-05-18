@@ -1,0 +1,263 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #121212;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image */
+.profile-img {
+  width: 150px; /* Kích thước cố định cho ảnh */
+  height: 150px;
+  border-radius: 50%; /* Tạo khung tròn */
+  overflow: hidden; /* Đảm bảo không bị tràn ra ngoài khung tròn */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #00c4cc; /* Đường viền của khung tròn */
+}
+
+.profile-img img {
+  width: 100%; /* Đảm bảo ảnh chiếm đầy khung tròn */
+  height: 100%; /* Đảm bảo ảnh chiếm đầy khung tròn */
+  object-fit: cover; /* Đảm bảo ảnh không bị kéo giãn */
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  color: #00c4cc;
+}
+
+.banner p {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+/* About Section */
+.about {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #00c4cc;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 2rem;
+  color: #00c4cc;
+}
+
+.skill-item p {
+  margin-top: 10px;
+}
+
+/* Projects Section */
+.projects {
+  background: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #00c4cc;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  display: inline-block;
+  width: 45%;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00c4cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.project-card .btn:hover {
+  background: #008c99;
+}
+
+/* Contact Section */
+.contact {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #00c4cc;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 15px;
+  background: #00c4cc;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #008c99;
+}
+
+/* Footer Section */
+.footer {
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #00c4cc;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #008c99;
+}
+
+/* Wave Animation */
+svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30vw;
+  max-height: 200px;
+}
+
+.waves > use {
+  animation: move-forever 2s -2s linear infinite;
+}
+
+.waves > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 6s;
+}
+
+.waves > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
