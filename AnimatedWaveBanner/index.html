@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <div class="banner-content">
+        <div class="profile-img">
+          <img src="img/main.jpg" alt="Profile Image" />
+        </div>
+        <div>
+          <h2>Anh Pham Tuan</h2>
+          <p style="color: azure;">子曰："君子求诸己,小人求诸人。"</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        My journey into technology started at a young age, fueled by curiosity and a love for discovery. 
+        Shortly after my mum brought home a new laptop, I couldn’t resist exploring it. 
+        What began as simple curiosity turned into a passion for understanding and creating with technology.
+      </p>
+      <div class="skills">
+        <div class="skill-item">
+          <i class="fas fa-code"></i>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-brush"></i>
+          <p>UI/UX Design</p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-laptop-code"></i>
+          <p>Frontend Frameworks</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="project-card">
+        <!-- <img src="project-image.jpg" alt="Project Image" /> -->
+        <h3>Project Name</h3>
+        <p>Description of the project...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <!-- <img src="project-image.jpg" alt="Project Image" /> -->
+        <h3>Project Name</h3>
+        <p>Description of the project...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Joe. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="waves">
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="0"
+          fill="#00c4cc"
+          fill-opacity=".2"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="3"
+          fill="#00c4cc"
+          fill-opacity=".5"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="6"
+          fill="#00c4cc"
+          fill-opacity=".9"
+        />
+      </g>
+    </svg>
+  </body>
+</html>
