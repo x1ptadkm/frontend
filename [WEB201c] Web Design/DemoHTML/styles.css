@@ -1,0 +1,72 @@
+/* styles.css */
+/* Base theme variables */
+:root {
+    --text-color: #4400ff;
+    --background-color: #fff;
+    --primary-color: #007bff;
+    --secondary-color: #000000;
+    --transition-duration: 0.5s; /* Added a variable for transition duration */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all var(--transition-duration) ease; /* Use the transition variable */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all var(--transition-duration) ease; /* Add transition to container */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    transition: all var(--transition-duration) ease; /* Add transition to header */
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    transition: color var(--transition-duration) ease; /* Add transition to h1 */
+}
+
+section {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transform: translateY(0);
+    transition: all var(--transition-duration) ease; /* Smooth all transitions in section */
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+.theme-toggle {
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all var(--transition-duration) ease; /* Add transition to button */
+}
+
+/* Dark theme variables */
+body.dark-theme {
+    --text-color: #ff0000;        /* Lighter text for better contrast */
+    --background-color: #2c3e50;
+    --primary-color: #3498db;
+    --secondary-color: #ff0000;
+}
