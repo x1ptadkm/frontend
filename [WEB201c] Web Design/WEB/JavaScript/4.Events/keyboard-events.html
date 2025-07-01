@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện Bàn phím</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .game-area {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            position: relative;
+        }
+        .player {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            transition: all 0.1s;
+        }
+        .key-display {
+            font-family: monospace;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xử lý sự kiện Bàn phím</h1>
+
+    <div class="box">
+        <h3>Nhập văn bản:</h3>
+        <input type="text" id="textInput" placeholder="Gõ gì đó...">
+        
+        <div id="keyDisplay" class="key-display">
+            Nhấn phím bất kỳ...
+        </div>
+
+        <h3>Mini Game (Dùng phím mũi tên):</h3>
+        <div class="game-area">
+            <div id="player" class="player"></div>
+        </div>
+    </div>
+
+    <div id="log" class="box">
+        <h3>Event Log:</h3>
+    </div>
+
+    <script>
+        const textInput = document.getElementById('textInput');
+        const keyDisplay = document.getElementById('keyDisplay');
+        const player = document.getElementById('player');
+        const log = document.getElementById('log');
+
+        function logEvent(text) {
+            log.innerHTML = `<div>${text}</div>` + log.innerHTML;
+            if (log.children.length > 5) {
+                log.removeChild(log.lastChild);
+            }
+        }
+
+        // Xử lý input text
+        textInput.addEventListener('keydown', (e) => {
+            keyDisplay.textContent = `Key pressed: ${e.key} (code: ${e.code})`;
+            logEvent(`Keydown: ${e.key}`);
+        });
+
+        textInput.addEventListener('keyup', (e) => {
+            logEvent(`Keyup: ${e.key}`);
+        });
+
+        // Di chuyển player
+        let playerPos = { x: 0, y: 0 };
+        const STEP = 10;
+
+        document.addEventListener('keydown', (e) => {
+            switch(e.key) {
+                case 'ArrowUp':
+                    playerPos.y = Math.max(0, playerPos.y - STEP);
+                    break;
+                case 'ArrowDown':
+                    playerPos.y = Math.min(180, playerPos.y + STEP);
+                    break;
+                case 'ArrowLeft':
+                    playerPos.x = Math.max(0, playerPos.x - STEP);
+                    break;
+                case 'ArrowRight':
+                    playerPos.x = Math.min(180, playerPos.x + STEP);
+                    break;
+            }
+            player.style.left = playerPos.x + 'px';
+            player.style.top = playerPos.y + 'px';
+        });
+    </script>
+</body>
+</html> 

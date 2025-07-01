@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByClassName Demo</title>
+    <style>
+        .item {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        .selected {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm elements bằng Class Name</h1>
+
+    <div id="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <button onclick="selectAllItems()">Chọn tất cả</button>
+    <button onclick="unselectAllItems()">Bỏ chọn tất cả</button>
+
+    <script>
+        function selectAllItems() {
+            let items = document.getElementsByClassName("item");
+            for(let item of items) {
+                item.classList.add("selected");
+            }
+        }
+
+        function unselectAllItems() {
+            let items = document.getElementsByClassName("item");
+            for(let item of items) {
+                item.classList.remove("selected");
+            }
+        }
+    </script>
+</body>
+</html> 

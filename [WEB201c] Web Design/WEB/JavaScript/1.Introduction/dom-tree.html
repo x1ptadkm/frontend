@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc cây DOM</title>
+    <style>
+        .tree-node {
+            margin-left: 20px;
+            padding: 5px;
+            border-left: 2px solid #ccc;
+        }
+        .node-content {
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cấu trúc cây DOM</h1>
+
+    <div id="dom-example">
+        <h2>Ví dụ về cấu trúc DOM</h2>
+        
+        <div class="tree-node">
+            <div class="node-content">html</div>
+            
+            <div class="tree-node">
+                <div class="node-content">head</div>
+                <div class="tree-node">
+                    <div class="node-content">title</div>
+                </div>
+            </div>
+            
+            <div class="tree-node">
+                <div class="node-content">body</div>
+                <div class="tree-node">
+                    <div class="node-content">h1</div>
+                </div>
+                <div class="tree-node">
+                    <div class="node-content">div</div>
+                    <div class="tree-node">
+                        <div class="node-content">p</div>
+                    </div>
+                    <div class="tree-node">
+                        <div class="node-content">button</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="interactive-demo">
+        <h2>Demo tương tác</h2>
+        <p>Click vào nút để xem thông tin về các node trong DOM:</p>
+        <button onclick="showDOMInfo()">Hiển thị thông tin DOM</button>
+        <div id="info-display"></div>
+    </div>
+
+    <script>
+        function showDOMInfo() {
+            const display = document.getElementById("info-display");
+            const body = document.body;
+            
+            let info = "Thông tin về DOM:\n";
+            info += `- Số lượng thẻ div: ${document.getElementsByTagName("div").length}\n`;
+            info += `- Số lượng thẻ p: ${document.getElementsByTagName("p").length}\n`;
+            info += `- Số lượng thẻ button: ${document.getElementsByTagName("button").length}\n`;
+            
+            display.innerHTML = info.replace(/\n/g, '<br>');
+        }
+    </script>
+</body>
+</html> 

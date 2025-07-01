@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo elements</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .new-item {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tạo elements mới</h1>
+
+    <div class="box">
+        <div id="list"></div>
+        <div id="complex-content"></div>
+    </div>
+
+    <button onclick="addSimpleElement()">Thêm element đơn giản</button>
+    <button onclick="addComplexElement()">Thêm element phức tạp</button>
+    <button onclick="insertBeforeFirst()">Chèn vào đầu</button>
+
+    <script>
+        function addSimpleElement() {
+            // Tạo element mới
+            let newDiv = document.createElement("div");
+            newDiv.textContent = "Item mới " + (document.getElementById("list").children.length + 1);
+            newDiv.className = "new-item";
+            
+            // Thêm vào list
+            document.getElementById("list").appendChild(newDiv);
+        }
+
+        function addComplexElement() {
+            let container = document.createElement("div");
+            container.className = "new-item";
+
+            let title = document.createElement("h3");
+            title.textContent = "Tiêu đề mới";
+
+            let para = document.createElement("p");
+            para.textContent = "Nội dung chi tiết...";
+
+            let btn = document.createElement("button");
+            btn.textContent = "Click me";
+            btn.onclick = () => alert("Button clicked!");
+
+            container.appendChild(title);
+            container.appendChild(para);
+            container.appendChild(btn);
+
+            document.getElementById("complex-content").appendChild(container);
+        }
+
+        function insertBeforeFirst() {
+            let list = document.getElementById("list");
+            let firstItem = list.firstChild;
+            
+            let newDiv = document.createElement("div");
+            newDiv.textContent = "Item đầu tiên mới";
+            newDiv.className = "new-item";
+
+            list.insertBefore(newDiv, firstItem);
+        }
+    </script>
+</body>
+</html> 

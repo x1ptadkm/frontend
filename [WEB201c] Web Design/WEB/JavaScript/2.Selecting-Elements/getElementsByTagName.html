@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName Demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm elements bằng Tag Name</h1>
+
+    <div id="content">
+        <p>Đoạn văn 1</p>
+        <p>Đoạn văn 2</p>
+        <p>Đoạn văn 3</p>
+        <span>Đây là span</span>
+        <p>Đoạn văn 4</p>
+    </div>
+
+    <button onclick="highlightParagraphs()">Highlight tất cả đoạn văn</button>
+    <button onclick="countElements()">Đếm số lượng elements</button>
+
+    <div id="result"></div>
+
+    <script>
+        function highlightParagraphs() {
+            let paragraphs = document.getElementsByTagName("p");
+            for(let p of paragraphs) {
+                p.classList.toggle("highlight");
+            }
+        }
+
+        function countElements() {
+            let result = document.getElementById("result");
+            let paragraphs = document.getElementsByTagName("p");
+            let spans = document.getElementsByTagName("span");
+            
+            result.innerHTML = `
+                Số đoạn văn (p): ${paragraphs.length}<br>
+                Số span: ${spans.length}
+            `;
+        }
+    </script>
+</body>
+</html> 

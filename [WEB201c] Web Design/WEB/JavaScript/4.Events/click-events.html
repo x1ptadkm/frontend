@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện Click</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .clickable {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin: 5px;
+        }
+        .clicked {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xử lý sự kiện Click</h1>
+
+    <div class="box">
+        <!-- Cách 1: Inline onclick -->
+        <div class="clickable" onclick="handleClick(this)">
+            Click me (inline onclick)
+        </div>
+
+        <!-- Cách 2: addEventListener -->
+        <div id="element2" class="clickable">
+            Click me (addEventListener)
+        </div>
+
+        <!-- Cách 3: Double click -->
+        <div id="element3" class="clickable">
+            Double click me
+        </div>
+
+        <!-- Cách 4: Right click -->
+        <div id="element4" class="clickable">
+            Right click me
+        </div>
+    </div>
+
+    <div id="log" class="box">
+        <h3>Event Log:</h3>
+    </div>
+
+    <script>
+        function logEvent(text) {
+            const log = document.getElementById('log');
+            log.innerHTML += `<div>${text}</div>`;
+        }
+
+        // Cách 1: Inline onclick
+        function handleClick(element) {
+            element.classList.toggle('clicked');
+            logEvent('Inline click event triggered');
+        }
+
+        // Cách 2: addEventListener
+        document.getElementById('element2').addEventListener('click', function(e) {
+            this.classList.toggle('clicked');
+            logEvent('addEventListener click event triggered');
+        });
+
+        // Cách 3: Double click
+        document.getElementById('element3').addEventListener('dblclick', function(e) {
+            this.classList.toggle('clicked');
+            logEvent('Double click event triggered');
+        });
+
+        // Cách 4: Right click (context menu)
+        document.getElementById('element4').addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Ngăn menu chuột phải mặc định
+            this.classList.toggle('clicked');
+            logEvent('Right click event triggered');
+        });
+    </script>
+</body>
+</html> 

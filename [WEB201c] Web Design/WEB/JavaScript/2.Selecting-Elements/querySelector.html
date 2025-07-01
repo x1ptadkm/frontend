@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector Demo</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .selected {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm element bằng querySelector</h1>
+
+    <div class="box">
+        <p class="text">Đoạn văn đầu tiên</p>
+        <p class="text special">Đoạn văn đặc biệt</p>
+        <div id="nested">
+            <p class="text">Đoạn văn trong div</p>
+        </div>
+    </div>
+
+    <button onclick="selectFirst()">Chọn đoạn đầu</button>
+    <button onclick="selectSpecial()">Chọn đoạn đặc biệt</button>
+    <button onclick="selectNested()">Chọn đoạn trong div</button>
+
+    <script>
+        function selectFirst() {
+            let first = document.querySelector(".text");
+            first.classList.toggle("selected");
+        }
+
+        function selectSpecial() {
+            let special = document.querySelector(".text.special");
+            special.classList.toggle("selected");
+        }
+
+        function selectNested() {
+            let nested = document.querySelector("#nested .text");
+            nested.classList.toggle("selected");
+        }
+    </script>
+</body>
+</html> 

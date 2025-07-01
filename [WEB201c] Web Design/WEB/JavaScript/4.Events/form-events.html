@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện Form</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .success {
+            color: green;
+            font-size: 0.9em;
+        }
+        input:focus {
+            outline: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xử lý sự kiện Form</h1>
+
+    <div class="box">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <div id="usernameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="interests">Sở thích:</label>
+                <select id="interests" name="interests" multiple>
+                    <option value="coding">Lập trình</option>
+                    <option value="reading">Đọc sách</option>
+                    <option value="music">Âm nhạc</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement">
+                    Tôi đồng ý với điều khoản
+                </label>
+            </div>
+
+            <button type="submit">Gửi</button>
+            <button type="reset">Xóa form</button>
+        </form>
+    </div>
+
+    <div id="log" class="box">
+        <h3>Event Log:</h3>
+    </div>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const interests = document.getElementById('interests');
+        const agreement = document.getElementById('agreement');
+        const log = document.getElementById('log');
+
+        function logEvent(text) {
+            log.innerHTML = `<div>${text}</div>` + log.innerHTML;
+            if (log.children.length > 5) {
+                log.removeChild(log.lastChild);
+            }
+        }
+
+        // Focus events
+        username.addEventListener('focus', () => {
+            logEvent('Username field focused');
+        });
+
+        username.addEventListener('blur', () => {
+            if (username.value.length < 3) {
+                document.getElementById('usernameError').textContent = 
+                    'Tên đăng nhập phải có ít nhất 3 ký tự';
+            } else {
+                document.getElementById('usernameError').textContent = '';
+            }
+            logEvent('Username field blurred');
+        });
+
+        // Change events
+        email.addEventListener('change', () => {
+            const isValid = email.value.includes('@');
+            document.getElementById('emailError').textContent = 
+                isValid ? '' : 'Email không hợp lệ';
+            logEvent(`Email changed: ${email.value}`);
+        });
+
+        interests.addEventListener('change', () => {
+            const selected = Array.from(interests.selectedOptions)
+                                .map(option => option.value);
+            logEvent(`Selected interests: ${selected.join(', ')}`);
+        });
+
+        // Submit event
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!agreement.checked) {
+                alert('Vui lòng đồng ý với điều khoản');
+                return;
+            }
+            logEvent('Form submitted successfully');
+            // Thường thì ở đây sẽ gửi dữ liệu đi
+        });
+
+        // Reset event
+        form.addEventListener('reset', () => {
+            document.getElementById('usernameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            logEvent('Form reset');
+        });
+    </script>
+</body>
+</html> 

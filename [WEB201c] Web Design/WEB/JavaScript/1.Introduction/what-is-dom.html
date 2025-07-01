@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM là gì?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .example {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm hiểu về DOM (Document Object Model)</h1>
+    
+    <div id="explanation" class="example">
+        <h2>DOM là gì?</h2>
+        <p>DOM là viết tắt của <strong>Document Object Model</strong></p>
+        <p>DOM biểu diễn trang web dưới dạng cấu trúc cây, trong đó mỗi thẻ HTML là một nút (node)</p>
+    </div>
+
+    <div id="demo" class="example">
+        <h2>Ví dụ về DOM</h2>
+        <p>Click vào các nút bên dưới để thấy cách DOM hoạt động:</p>
+        
+        <div id="interactive">
+            <p id="target">Đây là đoạn văn bản mẫu</p>
+            <button onclick="changeText()">Đổi nội dung</button>
+            <button onclick="changeColor()">Đổi màu</button>
+            <button onclick="addHighlight()">Thêm highlight</button>
+        </div>
+    </div>
+
+    <script>
+        // Các hàm để thao tác với DOM
+        function changeText() {
+            // Lấy element bằng ID và thay đổi nội dung
+            document.getElementById("target").innerText = "Nội dung đã được thay đổi!";
+        }
+
+        function changeColor() {
+            // Thay đổi màu chữ
+            document.getElementById("target").style.color = "red";
+        }
+
+        function addHighlight() {
+            // Thêm class highlight
+            document.getElementById("target").classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html> 

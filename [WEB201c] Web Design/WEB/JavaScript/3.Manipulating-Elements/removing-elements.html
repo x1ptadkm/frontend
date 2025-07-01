@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa elements</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .item {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xóa elements</h1>
+
+    <div class="box">
+        <div id="list">
+            <div class="item">
+                Item 1
+                <button onclick="removeItem(this)">Xóa</button>
+            </div>
+            <div class="item">
+                Item 2
+                <button onclick="removeItem(this)">Xóa</button>
+            </div>
+            <div class="item">
+                Item 3
+                <button onclick="removeItem(this)">Xóa</button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="addItem()">Thêm item</button>
+    <button onclick="removeFirst()">Xóa đầu tiên</button>
+    <button onclick="removeLast()">Xóa cuối cùng</button>
+    <button onclick="removeAll()">Xóa tất cả</button>
+
+    <script>
+        function removeItem(button) {
+            let item = button.parentElement;
+            item.remove();
+        }
+
+        function addItem() {
+            let list = document.getElementById("list");
+            let newItem = document.createElement("div");
+            newItem.className = "item";
+            newItem.innerHTML = `
+                Item ${list.children.length + 1}
+                <button onclick="removeItem(this)">Xóa</button>
+            `;
+            list.appendChild(newItem);
+        }
+
+        function removeFirst() {
+            let list = document.getElementById("list");
+            if (list.firstChild) {
+                list.firstChild.remove();
+            }
+        }
+
+        function removeLast() {
+            let list = document.getElementById("list");
+            if (list.lastChild) {
+                list.lastChild.remove();
+            }
+        }
+
+        function removeAll() {
+            let list = document.getElementById("list");
+            list.innerHTML = "";
+        }
+    </script>
+</body>
+</html> 

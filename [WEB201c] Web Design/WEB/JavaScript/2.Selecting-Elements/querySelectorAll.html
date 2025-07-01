@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelectorAll Demo</title>
+    <style>
+        .item {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm nhiều elements bằng querySelectorAll</h1>
+
+    <div class="container">
+        <div class="group">
+            <p class="item">Item 1.1</p>
+            <p class="item">Item 1.2</p>
+        </div>
+        <div class="group">
+            <p class="item">Item 2.1</p>
+            <p class="item special">Item 2.2</p>
+        </div>
+    </div>
+
+    <button onclick="highlightAll()">Highlight tất cả</button>
+    <button onclick="highlightSpecial()">Highlight special</button>
+    <button onclick="highlightGroup(0)">Highlight nhóm 1</button>
+    <button onclick="highlightGroup(1)">Highlight nhóm 2</button>
+
+    <script>
+        function highlightAll() {
+            let items = document.querySelectorAll(".item");
+            items.forEach(item => {
+                item.classList.toggle("highlight");
+            });
+        }
+
+        function highlightSpecial() {
+            let special = document.querySelectorAll(".item.special");
+            special.forEach(item => {
+                item.classList.toggle("highlight");
+            });
+        }
+
+        function highlightGroup(index) {
+            let group = document.querySelectorAll(".group")[index];
+            let items = group.querySelectorAll(".item");
+            items.forEach(item => {
+                item.classList.toggle("highlight");
+            });
+        }
+    </script>
+</body>
+</html> 

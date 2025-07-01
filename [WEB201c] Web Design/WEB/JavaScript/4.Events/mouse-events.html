@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện Chuột</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .hover-area {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+        .drag-item {
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            cursor: move;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .drop-zone {
+            width: 200px;
+            height: 100px;
+            border: 2px dashed #ccc;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Xử lý sự kiện Chuột</h1>
+
+    <div class="box">
+        <!-- Mouse hover events -->
+        <div id="hoverArea" class="hover-area">
+            Hover over me
+        </div>
+
+        <!-- Mouse move tracking -->
+        <div id="moveArea" class="hover-area">
+            Move mouse here
+        </div>
+
+        <!-- Drag and drop -->
+        <div id="dragItem" class="drag-item" draggable="true">
+            Drag me
+        </div>
+        <div id="dropZone" class="drop-zone">
+            Drop here
+        </div>
+    </div>
+
+    <div id="log" class="box">
+        <h3>Event Log:</h3>
+    </div>
+
+    <script>
+        function logEvent(text) {
+            const log = document.getElementById('log');
+            log.innerHTML = `<div>${text}</div>` + log.innerHTML;
+            if (log.children.length > 5) {
+                log.removeChild(log.lastChild);
+            }
+        }
+
+        // Hover events
+        const hoverArea = document.getElementById('hoverArea');
+        hoverArea.addEventListener('mouseenter', () => {
+            hoverArea.style.backgroundColor = 'lightgreen';
+            logEvent('Mouse entered hover area');
+        });
+        hoverArea.addEventListener('mouseleave', () => {
+            hoverArea.style.backgroundColor = '#f0f0f0';
+            logEvent('Mouse left hover area');
+        });
+
+        // Mouse move tracking
+        const moveArea = document.getElementById('moveArea');
+        moveArea.addEventListener('mousemove', (e) => {
+            const rect = moveArea.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            moveArea.textContent = `X: ${Math.round(x)}, Y: ${Math.round(y)}`;
+        });
+
+        // Drag and drop
+        const dragItem = document.getElementById('dragItem');
+        const dropZone = document.getElementById('dropZone');
+
+        dragItem.addEventListener('dragstart', () => {
+            dragItem.style.opacity = '0.5';
+            logEvent('Started dragging');
+        });
+
+        dragItem.addEventListener('dragend', () => {
+            dragItem.style.opacity = '1';
+            logEvent('Ended dragging');
+        });
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '#e0e0e0';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.backgroundColor = 'transparent';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = 'transparent';
+            dropZone.appendChild(dragItem);
+            logEvent('Item dropped');
+        });
+    </script>
+</body>
+</html> 

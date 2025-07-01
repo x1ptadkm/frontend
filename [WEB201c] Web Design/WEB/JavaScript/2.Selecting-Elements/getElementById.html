@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById Demo</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm element bằng ID</h1>
+
+    <div class="box">
+        <p id="para1">Đoạn văn 1</p>
+        <p id="para2">Đoạn văn 2</p>
+        <p id="para3">Đoạn văn 3</p>
+    </div>
+
+    <button onclick="highlightPara1()">Highlight đoạn 1</button>
+    <button onclick="changePara2()">Đổi đoạn 2</button>
+    <button onclick="hidePara3()">Ẩn đoạn 3</button>
+
+    <script>
+        function highlightPara1() {
+            let para1 = document.getElementById("para1");
+            para1.classList.toggle("highlight");
+        }
+
+        function changePara2() {
+            let para2 = document.getElementById("para2");
+            para2.innerText = "Nội dung mới!";
+        }
+
+        function hidePara3() {
+            let para3 = document.getElementById("para3");
+            para3.style.display = para3.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html> 

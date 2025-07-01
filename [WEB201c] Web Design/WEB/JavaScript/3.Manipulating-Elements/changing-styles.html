@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi style</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .styled-text {
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thay đổi style elements</h1>
+
+    <div class="box">
+        <p id="text1">Văn bản để thay đổi style trực tiếp</p>
+        <p id="text2">Văn bản để thay đổi class</p>
+        <div id="box1" style="width: 100px; height: 100px; background-color: red;"></div>
+    </div>
+
+    <button onclick="changeInlineStyle()">Đổi style trực tiếp</button>
+    <button onclick="toggleClass()">Bật/tắt class</button>
+    <button onclick="animateBox()">Di chuyển hộp</button>
+
+    <script>
+        function changeInlineStyle() {
+            let text1 = document.getElementById("text1");
+            text1.style.color = "red";
+            text1.style.fontSize = "24px";
+            text1.style.backgroundColor = "yellow";
+        }
+
+        function toggleClass() {
+            let text2 = document.getElementById("text2");
+            text2.classList.toggle("styled-text");
+        }
+
+        function animateBox() {
+            let box = document.getElementById("box1");
+            let currentMargin = parseInt(box.style.marginLeft || "0");
+            box.style.marginLeft = (currentMargin + 50) + "px";
+        }
+    </script>
+</body>
+</html> 

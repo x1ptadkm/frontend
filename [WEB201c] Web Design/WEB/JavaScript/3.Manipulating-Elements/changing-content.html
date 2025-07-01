@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi nội dung</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thay đổi nội dung elements</h1>
+
+    <div class="box">
+        <p id="text1">Đây là văn bản thường</p>
+        <p id="text2">Đây là <strong>văn bản</strong> có HTML</p>
+        <input id="input1" type="text" value="Giá trị ban đầu">
+    </div>
+
+    <button onclick="changeInnerText()">Đổi innerText</button>
+    <button onclick="changeInnerHTML()">Đổi innerHTML</button>
+    <button onclick="changeValue()">Đổi value</button>
+    <button onclick="changeTextContent()">Đổi textContent</button>
+
+    <script>
+        function changeInnerText() {
+            let text1 = document.getElementById("text1");
+            text1.innerText = "Văn bản đã được thay đổi!";
+        }
+
+        function changeInnerHTML() {
+            let text2 = document.getElementById("text2");
+            text2.innerHTML = "Đây là <em>văn bản</em> mới với <strong>HTML</strong>";
+        }
+
+        function changeValue() {
+            let input1 = document.getElementById("input1");
+            input1.value = "Giá trị mới";
+        }
+
+        function changeTextContent() {
+            let text1 = document.getElementById("text1");
+            text1.textContent = "Văn bản mới với textContent";
+        }
+    </script>
+</body>
+</html> 

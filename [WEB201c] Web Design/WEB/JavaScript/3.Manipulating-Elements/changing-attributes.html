@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi thuộc tính</title>
+    <style>
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        img {
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thay đổi thuộc tính elements</h1>
+
+    <div class="box">
+        <img id="myImage" src="https://picsum.photos/200" alt="Ảnh mẫu">
+        <br>
+        <input id="myInput" type="text" placeholder="Nhập gì đó...">
+        <br>
+        <a id="myLink" href="https://example.com">Link mẫu</a>
+    </div>
+
+    <button onclick="changeImageSrc()">Đổi ảnh</button>
+    <button onclick="toggleInputType()">Đổi kiểu input</button>
+    <button onclick="changeLink()">Đổi link</button>
+    <button onclick="toggleDisabled()">Bật/tắt input</button>
+
+    <script>
+        function changeImageSrc() {
+            let img = document.getElementById("myImage");
+            img.src = "https://picsum.photos/200?" + new Date().getTime();
+            img.alt = "Ảnh mới";
+        }
+
+        function toggleInputType() {
+            let input = document.getElementById("myInput");
+            input.type = input.type === "text" ? "password" : "text";
+        }
+
+        function changeLink() {
+            let link = document.getElementById("myLink");
+            link.href = "https://google.com";
+            link.textContent = "Link Google";
+            link.target = "_blank";
+        }
+
+        function toggleDisabled() {
+            let input = document.getElementById("myInput");
+            input.disabled = !input.disabled;
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,10 @@
+App:
+- NÊN TẢI VSCODE https://code.visualstudio.com/ 
+- Just Color Picker (lấy mã màu trên màn hình - CŨNG KHÔNG NHẤT THIẾT XÀI vì cái này dùng để pick màu cho nhanh nhưng mình có thể đoán màu gần giống được)
+Extension: 
+- HTML/CSS Support (hỗ trợ html/css trên vscode)
+- live server (hiển thị web)
+- Prettier - Code formatter (lam dep code) 
+
+Extension web:
+- Paper rule https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?fbclid=IwY2xjawGpv7ZleHRuA2FlbQIxMAABHbD_MivXS-NsO2NlbkqoGv9p9nhtGIhPVsWe6nssZ8oT8t3SIMdFBkt3yg_aem_maAJW1LeyrIlAjxewyCEgA
