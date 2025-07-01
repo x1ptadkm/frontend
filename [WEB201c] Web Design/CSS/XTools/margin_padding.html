@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin vs Padding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .example {
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Ví dụ về Margin */
+        .margin-demo {
+            background-color: #ffeb3b; /* Vàng */
+            padding: 20px;
+            margin: 30px;
+            border: 5px solid #333;
+        }
+
+        /* Ví dụ về Padding */
+        .padding-demo {
+            background-color: #2196f3; /* Xanh dương */
+            padding: 30px;
+            margin: 0;
+            border: 5px solid #333;
+        }
+
+        .content {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="example">
+        <h2>Margin (Lề ngoài)</h2>
+        <div class="box">
+            <div class="margin-demo">
+                <div class="content">
+                    Margin là khoảng cách từ viền của phần tử<br>
+                    đến các phần tử khác xung quanh<br>
+                    (khoảng cách bên ngoài)
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Margin:</strong>
+            <ul style="text-align: left;">
+                <li>Tạo khoảng cách GIỮA các phần tử</li>
+                <li>Nằm BÊN NGOÀI viền (border)</li>
+                <li>Có thể là số âm</li>
+                <li>Có thể bị chồng lấp (margin collapse)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>Padding (Lề trong)</h2>
+        <div class="box">
+            <div class="padding-demo">
+                <div class="content">
+                    Padding là khoảng cách từ viền của phần tử<br>
+                    đến nội dung bên trong nó<br>
+                    (khoảng cách bên trong)
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Padding:</strong>
+            <ul style="text-align: left;">
+                <li>Tạo khoảng cách TRONG phần tử</li>
+                <li>Nằm BÊN TRONG viền (border)</li>
+                <li>Không thể là số âm</li>
+                <li>Không bị chồng lấp</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Thêm hiệu ứng hover để làm nổi bật
+        document.querySelectorAll('.margin-demo, .padding-demo').forEach(element => {
+            element.addEventListener('mouseover', function() {
+                this.style.transition = 'all 0.3s';
+                if (this.classList.contains('margin-demo')) {
+                    this.style.margin = '50px';
+                } else {
+                    this.style.padding = '50px';
+                }
+            });
+
+            element.addEventListener('mouseout', function() {
+                if (this.classList.contains('margin-demo')) {
+                    this.style.margin = '30px';
+                } else {
+                    this.style.padding = '30px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

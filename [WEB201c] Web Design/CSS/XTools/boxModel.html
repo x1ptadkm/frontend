@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Học Box Model CSS</title>
+    <style>
+       
+
+        .demo-box {
+            width: fit-content;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        /* Vùng margin - màu vàng */
+        .margin-area {
+            background-color: #ffeb3b;
+            position: relative;
+        }
+        .margin-area::before {
+            content: "Margin";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            color: #333;
+        }
+
+        /* Vùng border - màu xanh lá */
+        .border-area {
+            background-color: #4caf50;
+            position: relative;
+        }
+        .border-area::before {
+            content: "Border";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            color: white;
+        }
+
+        /* Vùng padding - màu xanh dương */
+        .padding-area {
+            background-color: #2196f3;
+            position: relative;
+        }
+        .padding-area::before {
+            content: "Padding";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+            color: white;
+        }
+
+        /* Vùng content - màu đỏ */
+        .content-area {
+            background-color: #f44336;
+            min-width: 100px;
+            min-height: 50px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .content-area::before {
+            content: "Content";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Học Box Model CSS Tương Tác</h1>
+        <p>Kéo các thanh trượt để thấy sự thay đổi của từng thành phần:</p>
+
+        <div class="demo-box">
+            <div class="margin-area" id="margin-area">
+                <div class="border-area" id="border-area">
+                    <div class="padding-area" id="padding-area">
+                        <div class="content-area" id="content-area">
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <h3>Margin (Lề ngoài - Màu vàng)</h3>
+                <label>Margin: <span id="margin-value">20px</span></label>
+                <input type="range" min="0" max="50" value="20" id="margin-control">
+                <p class="value-display">Khoảng cách từ viền ra ngoài</p>
+            </div>
+
+            <div class="control-group">
+                <h3>Border (Viền - Màu xanh lá)</h3>
+                <label>Border: <span id="border-value">5px</span></label>
+                <input type="range" min="0" max="20" value="5" id="border-control">
+                <p class="value-display">Độ dày của đường viền</p>
+            </div>
+
+            <div class="control-group">
+                <h3>Padding (Lề trong - Màu xanh dương)</h3>
+                <label>Padding: <span id="padding-value">0px</span></label>
+                <input type="range" min="0" max="50" value="0" id="padding-control">
+                <p class="value-display">Khoảng cách từ nội dung đến viền</p>
+            </div>
+
+            <div class="control-group">
+                <h3>Content (Nội dung - Màu đỏ)</h3>
+                <label>Content size: <span id="content-value">300px</span></label>
+                <input type="range" min="50" max="500" value="300" id="content-control">
+                <p class="value-display">Kích thước của phần nội dung</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateValue(controlId, valueId, property, element, unit = 'px') {
+            const control = document.getElementById(controlId);
+            const valueDisplay = document.getElementById(valueId);
+            
+            control.addEventListener('input', function() {
+                const value = this.value + unit;
+                valueDisplay.textContent = value;
+                element.style[property] = value;
+            });
+        }
+
+        // Cập nhật các giá trị khi người dùng tương tác
+        updateValue('margin-control', 'margin-value', 'padding', document.getElementById('margin-area'));
+        updateValue('border-control', 'border-value', 'padding', document.getElementById('border-area'));
+        updateValue('padding-control', 'padding-value', 'padding', document.getElementById('padding-area'));
+        updateValue('content-control', 'content-value', 'width', document.getElementById('content-area'));
+
+        // Đảm bảo content-area luôn có kích thước tối thiểu
+        document.getElementById('content-area').style.height = 
+            document.getElementById('content-control').value + 'px';
+    </script>
+</body>
+</html>

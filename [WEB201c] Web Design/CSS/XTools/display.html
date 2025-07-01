@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Các style cho phần demo */
+        .demo-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .element {
+            background-color: #ff9999;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ff6666;
+        }
+
+        /* Demo cho display: block */
+        .block-element {
+            display: block;
+            background-color: #ffeb3b;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        /* Demo cho display: inline */
+        .inline-element {
+            display: inline;
+            background-color: #4caf50;
+            color: white;
+            padding: 5px;
+        }
+
+        /* Demo cho display: inline-block */
+        .inline-block-element {
+            display: inline-block;
+            background-color: #2196f3;
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* Demo cho display: flex */
+        .flex-container {
+            display: flex;
+            background-color: #e1bee7;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: #9c27b0;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            flex: 1;
+        }
+
+        /* Demo cho display: grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #ffccbc;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Demo cho display: none */
+        .hidden {
+            display: none;
+        }
+
+        /* Thêm màu cho note quan trọng */
+        .important-note {
+            background-color: #ffe0e0;
+            padding: 10px;
+            border-left: 4px solid #ff0000;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hướng dẫn CSS Display Properties</h1>
+
+    <div class="section">
+        <h2>1. display: block (Giá trị mặc định cho div, p, h1-h6)</h2>
+        <div class="demo-box">
+            <div class="block-element">Block Element 1</div>
+            <div class="block-element">Block Element 2</div>
+            <div class="block-element">Block Element 3</div>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Luôn bắt đầu trên một dòng mới
+            <br>- Chiếm toàn bộ chiều ngang có sẵn
+            <br>- Có thể set width và height
+            <br>- Các phần tử block mặc định: div, p, h1-h6, section, article
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. display: inline (Giá trị mặc định cho span, a, img)</h2>
+        <div class="demo-box">
+            <span class="inline-element">Inline 1</span>
+            <span class="inline-element">Inline 2</span>
+            <span class="inline-element">Inline 3</span>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Không bắt đầu trên dòng mới
+            <br>- Chỉ chiếm không gian cần thiết
+            <br>- KHÔNG thể set width và height
+            <br>- Các phần tử inline mặc định: span, a, img, em, strong
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>3. display: inline-block</h2>
+        <div class="demo-box">
+            <div class="inline-block-element">Box 1</div>
+            <div class="inline-block-element">Box 2</div>
+            <div class="inline-block-element">Box 3</div>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Kết hợp tính năng của block và inline
+            <br>- Không bắt đầu trên dòng mới
+            <br>- CÓ THỂ set width và height
+            <br>- Thường dùng cho: buttons, navigation items
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>4. display: flex (Modern Layout)</h2>
+        <div class="demo-box">
+            <div class="flex-container">
+                <div class="flex-item">Flex 1</div>
+                <div class="flex-item">Flex 2</div>
+                <div class="flex-item">Flex 3</div>
+            </div>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Tạo layout một chiều (row hoặc column)
+            <br>- Dễ dàng căn chỉnh items (justify-content, align-items)
+            <br>- Linh hoạt trong việc chia không gian
+            <br>- Thường dùng cho: navigation bars, card layouts, centering content
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>5. display: grid (Modern Layout)</h2>
+        <div class="demo-box">
+            <div class="grid-container">
+                <div class="grid-item">Grid 1</div>
+                <div class="grid-item">Grid 2</div>
+                <div class="grid-item">Grid 3</div>
+                <div class="grid-item">Grid 4</div>
+                <div class="grid-item">Grid 5</div>
+                <div class="grid-item">Grid 6</div>
+            </div>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Tạo layout hai chiều (rows và columns)
+            <br>- Dễ dàng tạo grid layouts phức tạp
+            <br>- Kiểm soát chính xác kích thước và vị trí items
+            <br>- Thường dùng cho: photo galleries, dashboard layouts, complex grid systems
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>6. display: none</h2>
+        <div class="demo-box">
+            <button onclick="toggleElement()">Toggle Element</button>
+            <div id="toggleMe" class="element">
+                Element này sẽ ẩn khi click button
+            </div>
+        </div>
+        <p class="important-note">
+            ⭐ Đặc điểm:
+            <br>- Ẩn hoàn toàn element khỏi trang
+            <br>- Không chiếm không gian trên trang
+            <br>- Khác với visibility: hidden (vẫn giữ không gian nhưng ẩn)
+            <br>- Thường dùng cho: toggle menus, modals, responsive design
+        </p>
+    </div>
+
+    <script>
+        function toggleElement() {
+            const element = document.getElementById('toggleMe');
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

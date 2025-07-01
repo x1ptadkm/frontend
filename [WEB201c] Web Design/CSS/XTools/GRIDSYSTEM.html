@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flexbox Grid System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        } 
+
+        .flex-demo {
+            border: 2px solid #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .flex-box {
+            display: flex;
+            height: 100px;
+            background-color: #fff;
+            border: 1px solid #999;
+            margin-bottom: 5px;
+        }
+
+        .item {
+            width: 30px;
+            height: 30px;
+            background-color: #ff6b6b;
+            margin: 2px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Justify Content Styles */
+        .justify-start { justify-content: flex-start; }
+        .justify-center { justify-content: center; }
+        .justify-end { justify-content: flex-end; }
+        .justify-between { justify-content: space-between; }
+        .justify-around { justify-content: space-around; }
+        .justify-evenly { justify-content: space-evenly; }
+
+        /* Align Items Styles */
+        .align-start { align-items: flex-start; }
+        .align-center { align-items: center; }
+        .align-end { align-items: flex-end; }
+        .align-stretch { align-items: stretch; }
+    </style>
+</head>
+<body>
+    <h1>Hướng dẫn CSS Flexbox</h1>
+
+    <div class="section">
+        <h2>Justify Content (Căn chỉnh theo chiều ngang)</h2>
+        <div class="grid-container">
+            <div class="flex-demo">
+                <div class="flex-box justify-start">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: flex-start</strong>
+                    <br>Các item được căn về bên trái
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box justify-center">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: center</strong>
+                    <br>Các item được căn giữa theo chiều ngang
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box justify-end">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: flex-end</strong>
+                    <br>Các item được căn về bên phải
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box justify-between">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: space-between</strong>
+                    <br>Các item được phân bố đều, item đầu và cuối sát mép
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box justify-around">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: space-around</strong>
+                    <br>Các item được phân bố đều với khoảng cách bằng nhau xung quanh
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box justify-evenly">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>justify-content: space-evenly</strong>
+                    <br>Các item được phân bố với khoảng cách hoàn toàn bằng nhau
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Align Items (Căn chỉnh theo chiều dọc)</h2>
+        <div class="grid-container">
+            <div class="flex-demo">
+                <div class="flex-box align-start">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>align-items: flex-start</strong>
+                    <br>Các item được căn lên trên
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box align-center">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>align-items: center</strong>
+                    <br>Các item được căn giữa theo chiều dọc
+                </div>
+            </div>
+
+            <div class="flex-demo">
+                <div class="flex-box align-end">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="description">
+                    <strong>align-items: flex-end</strong>
+                    <br>Các item được căn xuống dưới
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
