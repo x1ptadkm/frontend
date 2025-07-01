@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Demo</title>
+</head>
+<body>
+    <h1>Testing Different Input Types</h1>
+    
+    <form action="#" method="post">
+        <!-- Text input -->
+        <div>
+            <label for="usernameHEHE">Username:</label>
+            <input type="text" id="usernameHEHE" name="username" placeholder="Enter your username">
+            <input type="text" name="username">
+          </div>
+        <br>
+
+        <!-- Radio buttons -->
+        <div>
+            <p>Select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+
+        <!-- Checkboxes -->
+        <div>
+            <p>Select your hobbies:</p>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <label for="cooking">Cooking</label>
+        </div>
+        <br>
+
+        <!-- Regular button -->
+        <div>
+            <input type="button" value="Click Me!" onclick="alert('Button clicked!')">
+        </div>
+        <br>
+
+        <!-- Submit button -->
+        <div> 
+            <input type="submit" value="Submit Form">
+        </div>
+    </form>
+</body>
+</html>
