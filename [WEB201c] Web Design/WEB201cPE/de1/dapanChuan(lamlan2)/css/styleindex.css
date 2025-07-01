@@ -1,0 +1,146 @@
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.text-header{
+    width: 33.3%;
+    text-align: center;
+    color: #0EC0C3;
+    margin-top: 30px;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+}
+.search{ 
+    width: 33.3%;
+    margin-top: 80px;
+}
+/* nav */
+.menu{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* section  1 */
+.content img{
+    width: 100%;
+    height: 400px;
+}
+.blueText h2{
+    color: #0EC0C3;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text-content p{
+    text-align: justify;
+    font-size: 20px;
+}
+.form label{
+    font-size: 20px;
+}
+.form input{
+    width: 90%;
+}
+.form button{
+    padding: 15px 20px;
+    color: white;
+    background-color: #F79646;
+}
+/* section2 */
+.landmarks{
+    margin-top: 50px;
+}
+.landmarks img{
+    width: 100%;
+    height: 300px;
+}
+/* section 3 */
+.sec3 {
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.sec3 img{
+    width: 100%;
+    height: 275px;
+}
+.text-sec3 h2{
+    color: #3A7135;
+}
+.text-sec3 p{
+    font-size: 20px;
+    text-align: justify;
+}
+.price-sec3{
+    text-align: center;
+    margin-top: 50px;
+}
+.price-sec3 h4{
+    color:#F79646;
+}
+.book{
+    color: white;
+    background-color: #16a9ca;
+    padding: 10px 10px;
+    font-size: 20px;
+    width: 55%;
+    margin: 0 auto;
+}
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
+
+/* media-fix */
+@media screen and (max-width: 768px) {
+    .header{
+        display: block;
+        text-align: center;
+
+    }
+    .header div{
+        margin: 0;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .blueText h2{
+        margin-top: 15px;
+    }
+
+    .content img{
+        height: 300px;
+    }
+    .form input{
+        width: 100%;
+    }
+    .landmarks{
+        padding: 0;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .landmarks img{
+        padding-bottom: 15px;
+    }
+    .price-sec3{
+        margin-top: 75px;
+    }
+    .price-sec3 p{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
