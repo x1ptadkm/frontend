@@ -1,0 +1,209 @@
+#F79646 : orange
+#0EC0C3 : ocean
+#3A7135 : green
+#06A2C8 : dark blue;
+#E7E3E4 : gray;
+
+mobile view de: 373px;
+::marker{color: gray;}
+@media screen and (max-width:768px)
+
+ width: max-content; // display: inline-block;
+ width: calc(-40px + 100%); 
+<select><option></></>
+table - tr th td border-collapse:collapse;
+
+<tr class="cb">
+<td><input type="checkbox" name="food" value="2" id="1"><label for = "1">Coconut cream </label></td>
+</tr>
+
+// xài cái div này nếu như bạn bị lỗi footer hoặc bị trèn lên trên, nói chung nó sẽ xóa thuộc tính float
+<div style="clear: both;"></div>
+
+
+.container-fluid {
+    width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.container {
+    max-width: 1500px;
+    padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+// chia đôi 2 img ( thuong minh xai .col-50)
+.banner{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1400px;
+ }
+
+
+// tại vì trong trường hợp không có div bao quanh 2 elements thì nó sẽ xuống dòng nên không nên xài padding ở phần tử này, nên xài ở cụm bên trong phần tử đó.
+
+.col-50{
+    min-height:1px;
+    float: left;
+    width: 50%;
+}
+
+// nen xai flex de bieu dien col
+col-6{ 
+position:relative;
+min-height:1px;
+padding-right:15px;
+padding-left:15px;
+float: left;
+width: 50%;
+}
+.col-6 img{
+    width: 100%;
+}
+
+
+<div class="form-item">
+<label></label>
+<input type="text">
+</div>
+
+/* =========== RESET CSS =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+:nth-child(1): Một pseudo-class được dùng để chọn phần tử con thứ nhất trong một nhóm các phần tử con cùng cấp. Khi áp dụng cho img, nó sẽ lựa chọn phần tử img nếu nó là con thứ nhất trong phần tử cha của nó.
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.text-header{
+    width: 33.3%;
+    text-align: center;
+    color: #0EC0C3;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+}
+.search{ 
+    width: 33.3%;
+}
+/* nav */
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.menu{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+css::marker
+
+.copyright {
+  flex-basis: 100%;
+  text-align: center; /* văn bản căn giữa */
+}
+
+
+flex-basis: 100%;
+Trong trường hợp của bạn, sử dụng flex-basis: 100%; khiến cho dòng copyright chiếm toàn bộ chiều rộng của footer, đảm bảo nó ở một mình trên một dòng riêng biệt, ngay cả khi có nhiều item khác trong container flex đó.
+special : flex: 1 chiếm toàn bộ chỗ thừa!
+
+
+
+
+Note js lỡ vô quên syntax =))
+
+function calculateTotal() {
+  var tourPrice = parseInt(document.getElementById("tour").value);
+  var numberOfPeople = parseInt(document.getElementById("number").value);
+  var totalPrice = tourPrice * numberOfPeople;
+  document.getElementById("result").innerText = "Total: $" + totalPrice;
+}
+
+onchange="displayPrice()" trong select
+function displayPrice() {
+  var selectedTour = document.getElementById("tour");
+  var priceDisplay = document.getElementById("priceDisplay");
+  var selectedPrice = selectedTour.options[selectedTour.selectedIndex].value;
+  priceDisplay.textContent = " - $" + selectedPrice;
+}
+
+
+var label = check[i].parentNode.getElementsByTagName("label")[0];
+            arr.push(label.textContent);
+
+.blueText h2{
+    color: #0EC0C3;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
