@@ -1,0 +1,103 @@
+.header{
+    text-align: center;
+}
+/* nav */
+.menu{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* section 1 */
+.blue-text h1{
+    color: #0EC0C3;
+    text-align: center;
+    padding: 30px 0;
+}
+.hung-phat-land img{
+    width: 100%;
+    height: 400px;
+}
+.hung-phat-land p{
+    text-align: justify;
+    font-size: 24px;
+}
+/* section 2 */
+.img-section2 img{
+    width: 100%;
+}
+.text-insight {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    color: white;
+}
+.img-2-left img{
+    height: 430px;
+}
+.img-2-right img{
+    height: 200px;
+}
+.img-2-right :nth-child(2n+1){
+    padding-left: 0;
+}
+
+.img-2-right :nth-child(3),
+.img-2-right :nth-child(4){
+    padding-top: 30px;
+}
+/* section 3 */
+.afforable-houses{
+    padding-bottom: 45px;
+}
+.afforable-houses img{
+    width: 100%;
+}
+.text-sec3{
+    padding-left: 0;
+}
+.text-sec3 h3{
+    color: #F79646;
+    text-align: center;
+}
+.text-sec3 p{
+    font-size: 19px;
+}
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .hung-phat-land p{
+        padding-top: 15px;
+    }
+    .text-insight{
+        top: 15px;
+    }
+    .img-2-left img{
+        height: auto;
+    }
+    .img-2-right img{
+        height: auto;
+    }
+    .img-sec2-1,  .img-sec2-2 {
+        padding-top:30px;
+    }
+    .img-sec2-1, .img-sec2-3{
+        margin-left: 15px;
+    }
+    .text-sec3{
+        padding-left: 15px;
+    }
+}
