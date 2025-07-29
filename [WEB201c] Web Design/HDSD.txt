@@ -5,3 +5,5 @@ Live Sever
 Live Preview
 Prettier - Code formatter
 
+method="post" truyền data từ fe xuông be
+method="get" truyền data từ be lên fe

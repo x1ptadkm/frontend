@@ -1,19 +1,3 @@
-<!DOCTYPE html> <!--Không có vẫn chạy được-->
-<html lang="en">
-<head> <!--Không có thì tab trình duyệt sẽ hiển thị URL thay vì tên trang-->
-    <meta charset="UTF-8"> <!--Ngôn ngữ -->
-                                <!--Chiều rộng=chiều rộng mọi devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Tỉ lệ 1.0=100%-->
-    <title>Note HTML</title>
-</head> 
-<body>
-    <h1> Heading </h1>
-    <p> paragraph</p>
-    img
-</body>
-</html>
-
-
 <!--
 CẤU TRÚC HTML
     <html>
@@ -28,3 +12,79 @@ CẤU TRÚC HTML
         </body>
     </html>
 -->
+
+<!DOCTYPE html> <!--Không có vẫn chạy được-->
+<html lang="en">
+<head> <!--Không có thì tab trình duyệt sẽ hiển thị URL thay vì tên trang-->
+    <meta charset="UTF-8"> <!--Ngôn ngữ -->
+                                <!--Chiều rộng=chiều rộng mọi devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Tỉ lệ 1.0=100%-->
+    <title>Note HTML</title>
+</head> 
+<body>
+    <h1> Heading </h1>
+    <p> paragraph</p>
+    <p> <b> Hello</b> <i>World</i> <u> !!! </u></p>
+    <a href="https://www.youtube.com/" target="_blank"> youtube </a> <!--Links --> <br>
+    <img src="HTML\image\element.png" alt="Hình ảnh rỗng" title="element">
+
+    <!-- ul>li*3 tab-->
+    <ul> <!--Danh sách không có thứ tự-->
+        <li>ichigo</li>
+        <li>ringo</li>
+        <li>budou</li>
+    </ul>
+
+    <ol> <!--Danh sách có thứ tự-->
+        <li>ichi</li>
+        <li>ni</li>
+        <li>san</li>
+        <li>yon</li>
+        <li>go</li>
+    </ol>
+
+    <div style="color: red;"> <!--Block-level element-->
+        <p><b>Hello</b></p>
+    </div>    
+    <div>
+        <p>Hello</p>
+        <span style="color: blue;"> This is my test paragraph,</span> <!--Inline element-->
+        <span>hihi!</span>
+        - okee
+    </div>
+    <br>
+
+    <h1>Form</h1>
+    <!--Text input-->
+    <div>
+        <span>
+            Username: <input type="text"> 
+        </span>
+    </div>
+    <!--Radio input-->
+    <div>
+        <p>Select your gender:</p>
+        <span> <!--Đặt cùng name mới có thể chọn 1 trong 2 radio-->
+            <input type="radio" name="gender"> Male 
+            <input type="radio" name="gender"> Female 
+        </span>
+    </div>
+    <!--Checkbox input-->
+    <div>
+        <p>Select your hobbies:</p>
+        <span>
+            <input type="checkbox" name="hobbies" id="1"> sakka
+            <input type="checkbox" name="hobbies" id="2"> suiei
+            <input type="checkbox" name="hobbies" id="3"> ongaku
+        </span>
+    </div>
+    <!--Submit input-->
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+    <!--Button input-->
+    <div>
+        <input type="button" value="Sever fail sever ready !!!" style="color: red;">
+    </div>
+</body>
+</html>
