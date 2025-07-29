@@ -1,0 +1,99 @@
+/* headeR */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: end;
+    padding: 15px 10px;
+}
+.text-header{
+    width: 33.3%;
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+}
+.logo img{
+    width: 200px;
+    height: 125px;
+}
+.search{ 
+    width: 33.3%;
+}
+/* nav */
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* section 1 */
+.blue-text h1{
+    color: #0EC0C3;
+    margin: 40px auto;
+    text-align: center;
+}
+.description p{
+    padding: 0 15px;
+    text-align: justify;
+    font-size: 27px;
+}
+/* section 2 */
+.container {
+    width: 100%;
+    max-width: 1300px;
+}
+.img-section2{
+    padding: 10px;
+}
+.img-section2 img{
+    width: 100%;
+}
+.img-section2-left{
+    text-align: center;
+}
+.img-section2-left img{
+    width: 60%;
+}
+/* section 3  */
+.best-seller h3{
+    color: #F79646;
+}
+.best-seller p{
+    text-align: justify;
+    font-size: 19px;
+}
+.best-seller img{
+    height: 375px;
+}
+.order{
+    margin-bottom: 30px;
+}
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        padding:0;
+    }
+    .text-header, .logo, .search{
+        width: 100%;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+    img{
+        width: 100%;
+    }
+}
