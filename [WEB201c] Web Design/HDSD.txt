@@ -1,1 +1,6 @@
 Muốn mở file .md --> Ctrl Shift V
+
+HTML/CSS Support
+Live Sever
+Live Preview
+Prettier - Code formatter
