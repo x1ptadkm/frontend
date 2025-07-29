@@ -1,0 +1,158 @@
+/* header */
+.box{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px black;
+}
+
+.box img{
+    width: 30%;
+    margin-left: 90px;
+}
+/*"sidenav"*/
+.sidenav {
+    text-align: left;
+}
+/* section1 */
+.bannerSec1, .formSec1{
+    display: inline-block;
+    vertical-align: top; /* to display vertically */
+    color: #F79646;
+}
+.bannerSec1{
+    width: 50%;
+}
+.bannerSec1 img{
+    width: 100%;
+    height: 50vw;
+}
+.formSec1{
+    width: 49%;
+}
+.contentSec1 h1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.textSec1{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+.textSec1 label{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.textSec1 input, textarea{
+    width: 60%;
+    margin-right: 60px;
+}
+.textSec1 select{
+    width: 61.5%; /* get nearly*/
+    margin-right: 60px;
+}
+#comment label{
+    margin-top: 180px;
+}
+
+#comment {
+    height: 200px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 30px;
+}
+.btn input{
+    padding: 20px 45px;
+    background-color: #F79646;
+    margin-right: 15px; /* Check khoang cach giua cac nut*/
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn input:nth-child(2){
+    margin-right: 0px;
+}
+
+
+/* Section 2 */
+/* Test inlineblock 50 49(no using div) */
+.redText{
+    color: red;
+    text-align: center;
+    padding: 30px 0px;
+}
+.imgSec2{
+    display: inline-block;
+    width: 50%;
+}
+.textSec2{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    font-size: 20px;
+}
+.imgSec2 img{
+    width: calc(100% - 40px);
+    height: 32vw;
+}
+.textSec2 h2{
+    color: #0EC0C3;
+    margin-top:0;
+}
+.textSec2 p{
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Section3 */
+/* Test 50% with 2 div */
+.section3 { /* xoa khoang trang chu khong 50% khong duoc */
+    font-size: 0;
+}
+.section3 h1{
+    font-size: 35px;
+}
+.section3 div{
+    display: inline-block;
+    vertical-align: top;
+    width:50%;
+    font-size: 20px;
+}
+
+.imgSec3 img {
+    float: left;
+    width: 50%;
+    height: 20vw;
+}
+
+.imgSec3 *:not(img){
+    padding-left: 400px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.imgSec3 h3,p{
+    margin: 0;
+}
+.price{
+    color: #F79646;
+    margin: 30px 0;
+}
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    margin-top: 60px;
+    padding: 10px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+/* Sign: done by Minthep */

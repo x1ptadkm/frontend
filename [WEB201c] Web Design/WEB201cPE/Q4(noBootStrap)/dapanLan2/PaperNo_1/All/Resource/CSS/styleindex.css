@@ -1,0 +1,151 @@
+ body{ /*container setting */
+        width: 98%; /*tai xai padding nen giam ti le kkk */
+        max-width: 1700px; /*1140 giong bootstrap*/
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+/* Note: ở trên padding để cho cả thân bài trái phải đều cách đều 15px với nhau,
+nhưng header thì mình không thích cách 15px, mình margin-left: -15px để phần tử
+lùi 15px về bên trái, padding right: 30px là mở rộng cái container bên phải ra 30px */
+
+
+/* header */
+.header {
+    margin-left: -15px;
+    padding-right: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px black;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 20%;
+    margin-left: 60px;
+}
+/* section 1 */
+.col-50{
+    min-height:1px;
+    float: left;
+    width: 50%;
+    }
+.banner img{
+    width: 100%;
+    max-height: 650px;
+}
+.form h1{
+    text-align: center;
+    color:#F79646;
+}
+.form label{
+    font-size: 22px;
+}
+.form{
+    color: #F79646;
+    padding-left:15px;
+    padding-bottom: 30px;
+}
+.form div{
+    width: max-content;
+    padding-bottom: 30px;
+}
+.block-form label{
+    display: inline-block;
+    width: 200px;
+}
+.block-form input, select, textarea{
+    width: 500px;
+    padding: 5px 0;
+}
+.cmt textarea {
+    padding-bottom: 250px;
+}
+
+.cmt label{
+    margin-top: 250px;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.btn input{
+    font-size: 25px;
+    padding: 20px 60px;
+    background-color:#F79646;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+
+}
+/* section2 */
+.best-seller h1{
+    text-align: center;
+    color: red;
+    padding-bottom: 20px;
+}
+.best-seller img{
+    width: calc(-40px + 100%); /*magic*/
+    padding: 20px;
+    padding-top: 0px;
+    height: 480px;
+    }
+.sec2 *{
+    padding-left: 50px;
+}
+hr {
+    margin-left:50px;
+}
+.best-seller h2{
+    margin-top: 0;
+    color:#0EC0C3;
+}
+.best-seller p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+/* section 3 */
+.accimg *:not(img){
+    padding-right: 30px;
+}
+.acc h1{
+    text-align: center;
+    color: red;
+    padding-bottom: 20px;
+}
+.accimg img{
+    float: left;
+    padding:15px;
+    height: 300px;
+    max-width: 300px;
+}
+.accimg h3{
+    margin-bottom: 0;
+}
+
+.accimg p{
+    font-size: 22.5px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.price
+    {
+    font-style: italic;
+    color:#F79646;
+    font-size: 25px;
+}
+/* footer */
+.footer{
+    background-color: #0EC0C3;
+    padding: 10px;
+}
+.footer p, h5{
+    text-align: center;
+    color: white;
+}
