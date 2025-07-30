@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+}
+
+h1{
+    color: rgb(0, 27, 100);
+}
+
+/*p = paragraph*/
+p{
+    color: brown;
+}
+
+.x1{
+    color: rgb(0, 27, 100);
+}
+
+#header{
+    background-color: white;
+    color: black;
+}
