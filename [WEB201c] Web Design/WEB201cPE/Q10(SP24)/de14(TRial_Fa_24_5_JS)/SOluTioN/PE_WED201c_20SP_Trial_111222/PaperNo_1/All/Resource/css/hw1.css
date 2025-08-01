@@ -1,0 +1,66 @@
+/* Header styling */
+header {
+    background-color: #c0bfbf;
+
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #646464;
+}
+
+nav a {
+    color: black;
+
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    background-color: #8a8888;
+}
+
+/* Hide images */
+aside.left {
+    display: none;
+}
+
+/* Main content styling */
+section.right {
+    background-color: #c0bfbf;
+    margin: 20px 0;
+}
+
+/* Table styling */
+table {
+    margin-left: 340px;
+    width: max-content;
+}
+
+th {
+    background-color: rgb(252, 252, 103);
+    text-align: left;
+}
+
+
+/* Form styling */
+#myform {
+    display: none;
+    margin-top: 20px;
+}
+
+#myform input[type="text"] {
+    padding: 5px;
+}
+
+/* Register form text styling */
+#mytext {
+    cursor: pointer;
+    margin-top: 20px;
+}
