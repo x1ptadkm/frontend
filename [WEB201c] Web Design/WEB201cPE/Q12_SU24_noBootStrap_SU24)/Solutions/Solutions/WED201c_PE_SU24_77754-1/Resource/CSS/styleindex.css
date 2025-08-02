@@ -1,0 +1,236 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header .first {
+    color: rgb(218, 92, 19);
+    font-style: italic;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.header img {
+    height: 100px;
+    width: 100px;
+}
+.header .form {
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.header .form button {
+    background-color: black;
+    color: white;
+}
+
+
+.menu ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the list items horizontally */
+    justify-content: space-around; /* Space out the items evenly */
+  }
+
+  .menu ul li {
+    margin: 0 15px; /* Margin between list items */
+  }
+  .menu {
+    padding: 10px; /* Some padding around the menu */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 40px;
+  }  
+
+  .menu ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .first-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+ /* Left banner image */
+.left-banner img {
+    height: auto;
+    height: 600px;
+    margin: 30px;
+  }
+  
+  /* Right content */
+  .right-content {
+    width: 500px;
+    margin: 10px;
+  }
+  
+  .welcome-heading {
+    font-size: 24px;
+    color: #0066cc;
+    margin-bottom: 20px;
+  }
+  
+  .room-info, .food-info {
+    /* align-items: center; */
+    margin-bottom: 20px;
+  }
+  
+  .room-info img, .food-info img {
+    float: left;
+    width: 200px; /* Image size */
+    height: auto;
+    margin-right: 10px; 
+  }
+
+  .room-title {
+    font-weight: bold;
+  }
+  .right-content .room-price {
+    color:orange;
+  }
+  
+  .room-price, .room-discount, .food-description, .food-ordering {
+    margin: 30px 0;
+  }
+  
+  .room-info p, .food-info p {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .lefooter {
+    background-color: rgb(36, 206, 212) ;
+    /* text-align: center; */
+    padding: 10px;
+    color: white;
+    /* display: flex; */
+}
+
+
+  .lefooter .left {
+    float: left;
+    margin-left: 30%;
+    padding-right: 15%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0099FF;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+
+
+  .lefooter h5 {
+    text-align: center;
+    background-color: rgb(36, 206, 212) ;
+    /* text-align: center; */
+    padding: 10px;
+    color: white;
+  }
+  .feedback-title h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0099FF;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.feedback-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback-item {
+    text-align: center;
+    width: 22%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.customer-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.rating img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.customer-name {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.feedback-text {
+    font-size: 14px;
+    color: #666;
+}
+.hotel-booking-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hotel-image-container {
+    width: 60%;
+}
+
+.hotel-image {
+    width: 100%;
+    height: auto;
+}
+
+.booking-form-container {
+    width: 35%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.booking-form-title {
+    color: #f27522;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-field {
+    margin-bottom: 15px;
+}
+
+.booking-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-input {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-button-container {
+    text-align: center;
+}
+
+.booking-button {
+    background-color: #f27522;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    background-color: #e65b00;
+}
