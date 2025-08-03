@@ -1,0 +1,185 @@
+body {
+    margin: 0px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-container>div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container img {
+    width: 150px;
+    height: 100px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-container li {
+    list-style-type: none;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 20px;
+}
+
+.banner-container img {
+    width: 100%;
+}
+
+.best-seller {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0px 100px;
+}
+
+/* .best-seller div{
+    flex: 1;
+} */
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub-left {
+    display: flex;
+    gap: 5px;
+}
+
+.sub-left img {
+    width: 145px;
+}
+
+.sub-img {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.sub-img img {
+    width: 80px;
+    border: 1px solid black;
+}
+
+/* .sub-img div{
+    width: 30px;
+    border: 1px solid black;
+} */
+
+.size {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.size a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.size div {
+    margin-top: 10px;
+}
+
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form input {
+    display: block;
+    width: 400px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+.but input {
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: fit-content;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+}
+
+.sug-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inner {
+    text-align: center;
+    background-color: #f6f2f1;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    height: 380px;
+}
+
+.inner h2 {
+    color: orangered;
+}
+
+.inner p {
+    width: 280px;
+    height: 18px;
+}
+
+.inner img {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #4a4645;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.footer h4 {
+    margin-bottom: 0;
+}
