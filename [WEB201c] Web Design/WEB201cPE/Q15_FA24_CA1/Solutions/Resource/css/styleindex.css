@@ -1,0 +1,102 @@
+.logo {
+    text-align: center;
+    padding: 5px;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-left {
+    border: 1px solid #71aee08c;
+    margin-bottom: 20px;
+}
+.box-left h4{
+    color: #71aee0;
+    background-color: #E5ECEF;
+    padding: 5px 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-left img{
+    width: 25px;
+    margin-right: 10px;
+}
+.box-left p{
+    margin-left: 10px;
+}
+
+.title h2 {
+    color: #0EC0C3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cirle-pic img{
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 94/100;
+}
+.cirle-pic{
+    padding: 0 30px;
+    text-align: center;
+}
+.product-flex{
+    display: flex;
+    gap: 20px;
+}
+.product-flex > div{
+    border: 1px solid #71aee08c;
+    padding: 0px;
+    width: 33.3333%;
+
+}
+.product p{
+    text-align: justify;
+    font-size: 20px;
+    padding: 0 5px;
+}
+.product h4{
+    color: orange;
+    padding: 0px 5px 0px 5px;
+}
+.product img{
+    width: 100%;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.product div{
+    justify-self: center;
+    background-color: #2CB5DA;
+    text-align: center;
+    color: white;
+    width: 80px;
+    padding: 12px 0px;
+    margin: auto auto 10px;
+}
+
+
+.finish-flex img{
+    width: 100%;
+}
+
+.finish-flex h4{
+    text-align: center;
+    color: orange;
+}
+
+.footer{
+    background-color: #10885A;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Luoi lam responsive :> */
