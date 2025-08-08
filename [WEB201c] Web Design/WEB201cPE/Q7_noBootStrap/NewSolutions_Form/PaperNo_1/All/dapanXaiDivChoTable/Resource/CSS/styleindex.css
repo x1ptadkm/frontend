@@ -1,0 +1,163 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.logo{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    width: 40%;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    color: #0EC0C3;
+    font-size: 20px;
+}
+.search input{
+    padding: 5px 20px;
+}
+.search button{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* section 1 */
+.col-50{
+    min-height:1px;
+    float: left;
+    width: 50%;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1400px;
+ }
+
+/* section 2 */
+.detail h1{
+    text-align: center;
+    color:#0EC0C3;
+    padding: 25px 0;
+}
+.detail p{
+    font-style: italic;
+    font-size: 23px;
+    text-align: justify;
+    color: #F79646;
+    padding: 0 15px;
+    padding-bottom: 30px;
+}
+
+/* footer */
+.footer{
+    background-color: #06A2C8;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 40px 0;
+}
+.footer div *{
+    padding-bottom: 20px;
+}
+.copyright{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* html-task */
+.book-tour{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.header-form{
+    text-align: center;
+    padding: 15px 50px;
+    background-color: #0EC0C3;
+    color: white;
+}
+
+.body-form{
+    padding: 10px;
+    background-color: #E7E3E4;
+}
+.body-form div{
+    padding-bottom: 20px;
+}
+
+.form-item label{
+    display: inline-block;
+    width: 120px;
+}
+
+.form-item select{
+    padding: 5px 10px;
+    width: 180px;
+}
+.form-item input{
+    width: 180px;
+    padding: 10px 10px;
+}
+
+.submit{
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.submit button{
+    color:white;
+    background-color: #F79646;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 15px;
+}
+
+.total{
+    color: white;
+    text-align: center;
+    background-color: #3A7135;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* javascript */
+#price{
+    display: inline-block;
+    color:#F79646;
+    text-align: end;
+    font-size: 20px;
+    width: 150px;
+}
