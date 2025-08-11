@@ -1,18 +1,22 @@
 /* reset css */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul {
+
+ul{
     list-style: none;
 }
-a {
+
+a{
     text-decoration: none;
 }
-img {
+
+img{
     width: 100%;
 }
+
 /* header */
 .header{
     display: flex;
