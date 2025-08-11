@@ -25,25 +25,31 @@ img{
     align-items: center;
     padding-bottom: 30px;
 }
+
 .logo{
     margin-left: 50px;
     width: 100px;
     height: 100px;
 }
+
 .menu{
     width: 40%;
 }
+
 .menu ul{
     display: flex;
     justify-content: space-around;
 }
+
 .menu a{
     color: #0EC0C3;
     font-size: 20px;
 }
+
 .search input{
     padding: 5px 20px;
 }
+
 .search button{
     background-color: black;
     color: white;
