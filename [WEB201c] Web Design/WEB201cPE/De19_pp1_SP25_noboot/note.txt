@@ -1,0 +1,5 @@
+width: max-content trong CSS được sử dụng để làm cho độ rộng của một phần tử vừa khít với nội dung bên trong của nó, tức là nó chỉ rộng đủ để chứa nội dung trên một dòng mà không xuống dòng hoặc dư ra khoảng trắng.
+
+
+Hint: bài này footer chúng ta đã học từ đề cũ, cái bảng cũng đề cũ 
+

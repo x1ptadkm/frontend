@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+    border-bottom: 2px solid #0EC0C3;
+
+}
+
+.logo {
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: #0e81c3;
+    font-size: 20px;
+}
+
+.search {
+    padding-right: 20px;
+}
+
+.search input {
+    padding: 5px 20px;
+}
+
+.search button {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* section1 */
+.sec-1 {
+    padding-top: 20px;
+}
+
+.col-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+}
+
+.col-6 img {
+    width: 100%;
+}
+
+.blueText h1 {
+    color: #3cc5b7;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.contact-detail p {
+    margin-left: 5px;
+    color: #F79646;
+    font-style: italic;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted #3cc5b7;
+}
+
+
+.contact-info p {
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted #3cc5b7;
+    padding: 5px 0;
+    gap: 5px;
+}
+
+.contact-info img {
+    width: 20px;
+}
+
+.contact-info span {
+    color: #0e81c3;
+    font-style: italic;
+}
+
+/* section2   */
+.blue-sec h1 {
+    color: #3cc5b7;
+    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.col-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.3%;
+}
+
+.col-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+
+    float: left;
+    width: 66.6%;
+}
+
+.sec-2-right p {
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.col-60 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 60%;
+}
+
+.col-40 {
+    position: relative;
+    min-height: 1px;
+
+    padding-left: 15px;
+    float: left;
+    width: 40%;
+}
+
+
+
+/* Section  3 */
+.sec-3{
+    margin-bottom: 20px;
+}
+.book-tour {
+    width: max-content;
+    margin: 0 auto;
+}
+
+/* width: max-content trong CSS được sử dụng 
+để làm cho độ rộng của một phần tử vừa khít với
+ nội dung bên trong của nó, tức là nó chỉ rộng đủ
+  để chứa nội dung trên một dòng mà không xuống dòng 
+  hoặc dư ra khoảng trắng. */
+
+.header-form {
+    text-align: center;
+    padding: 15px 50px;
+    background-color: #0EC0C3;
+    color: white;
+    font-size: 0.8em;
+}
+
+.body-form {
+    padding: 10px;
+    background-color: #E7E3E4;
+}
+
+.body-form div {
+    padding-bottom: 20px;
+}
+
+.form-item label {
+    display: inline-block;
+    
+    width: 7em;
+    /* nếu có width thì nó phải có dạng display */
+}
+
+.form-item select {
+    padding: 5px 10px;
+    width: 15em;
+}
+
+.form-item input {
+    width: 15em;
+    padding: 10px 10px;
+}
+
+.submit {
+    width: 150px;
+    margin: 20px auto 10px auto;
+}
+
+.submit p {
+
+    color: white;
+    background-color: #F79646;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: #06A2C8;
+    color: white;
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.footer div *{
+    padding-bottom: 20px;
+}
