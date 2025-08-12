@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.menu{
+    background-color: #E0DCDB;
+    padding: 10px;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title h1 {
+    color: #3e74a0;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+/* section 1 */
+
+.sec1 {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sec1-l {
+    width: 58.33333%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.662);
+}
+
+.sec1-r{
+    padding-left: 10px;
+    margin-left: 30px;
+    width: 41.66666%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.662);
+}
+
+.sec1-l{
+    display: flex;
+    padding: 15px;
+}
+
+.vivo-l {
+    width: 83.33333%;
+}
+.vivo-r{
+    display: flex;
+    flex-direction: column;
+    width: 16.666%;
+    border: 1px solid rgba(0, 0, 0, 0.155);
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 5px;
+}
+.vivo-r img{
+    height: 20%;
+}
+.vivo-l img{
+    height: 100%;
+
+}
+
+.sec1-r h2{
+    color: #ec9100;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sec1-r p{
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.price {
+    color: #ec9100;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sec2{
+    margin: 0 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.product-card{
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.662);
+}
+.product-card p{
+    text-align: center;
+    color: #ec9100;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.product-name {
+    background-color: #F3791D;
+    padding: 7px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.content > img {
+    width: 20%;
+    aspect-ratio: 35 / 40;
+    border-radius: 50%;
+}
+.sec3 {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.sec3-r {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.sec3-r p{
+    margin-bottom: 20px;
+}
+.sec3-r img{
+    width: 200px;
+}
+
+.footer{
+    background-color: #07A1C7;
+    color: white;
+    display:flex;
+    padding: 20px;
+}
+.footer div{
+    width: 50%;
+    margin-left: 20%;
+}
