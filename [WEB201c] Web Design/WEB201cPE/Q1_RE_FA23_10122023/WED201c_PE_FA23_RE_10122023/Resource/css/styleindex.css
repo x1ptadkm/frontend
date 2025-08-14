@@ -1,3 +1,28 @@
-ul{
-    
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.text-header{
+    width: 33.3%;
+    text-align: center;
+    color: #0EC0C3;
+}
+.logo{
+    width: 33.3%;
+    text-align: center;
+}
+.search{ 
+    width: 33.3%;
+}
+/* nav */
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.menu{
+    margin-left: -15px;
+    margin-right: -15px;
 }
