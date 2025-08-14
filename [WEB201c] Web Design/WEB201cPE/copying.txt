@@ -126,6 +126,7 @@ img {
 .search{ 
     width: 33.3%;
 }
+
 /* nav */
 .menu ul{
     display: flex;
