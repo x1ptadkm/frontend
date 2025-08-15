@@ -29,6 +29,7 @@ lùi 15px về bên trái, padding right: 30px là mở rộng cái container b�
     width: 20%;
     margin-left: 60px;
 }
+
 /* section 1 */
 .col-50{
     min-height:1px;
@@ -99,7 +100,7 @@ lùi 15px về bên trái, padding right: 30px là mở rộng cái container b�
     padding: 20px;
     padding-top: 0px;
     height: 480px;
-    }
+}
 .sec2 *{
     padding-left: 50px;
 }
@@ -150,6 +151,9 @@ hr {
 .footer{
     background-color: #0EC0C3;
     padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
 }
 .footer p, h5{
     text-align: center;
