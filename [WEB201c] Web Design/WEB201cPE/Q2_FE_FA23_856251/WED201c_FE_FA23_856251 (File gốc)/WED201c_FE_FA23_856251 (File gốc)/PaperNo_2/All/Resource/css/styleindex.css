@@ -98,4 +98,38 @@
         align-items: center;
         margin: 0 auto;
     }
+    .text-header, .logo, .search{
+        width: 100%;
+    }
+    .search{
+        margin: 10px;
+    }
+    .menu ul{
+        width: 100%;
+        margin-right: -15px;
+    }
+
+    .sec1 h2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sec1-left img{
+        width: 100%;
+    }
+    .sec1-mid img{
+        width: 100%;
+    }
+    .sec1-right img{
+        width: 100%;
+    }
+
+    .sec2 img{
+        width: 100%;
+    }
+    .sec2 h3{
+        margin-left: 70px;
+    }
+    .sec2 p{
+        margin-left: 70px;
+    }
 }
