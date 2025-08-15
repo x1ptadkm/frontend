@@ -14,3 +14,6 @@ padding: là khoảng cách giữa nội dung bên trong một phần tử và �
 
 Extension web:
 - Paper rule https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?fbclid=IwY2xjawGpv7ZleHRuA2FlbQIxMAABHbD_MivXS-NsO2NlbkqoGv9p9nhtGIhPVsWe6nssZ8oT8t3SIMdFBkt3yg_aem_maAJW1LeyrIlAjxewyCEgA
+
+Extension VSCode:
+- Theme: https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode
