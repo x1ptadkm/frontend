@@ -13,20 +13,13 @@ img{
   width: 100%;
 }
 
-/* container */
-.container-fluid{
-    width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto
-}
 
 /* header */
 .header{
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+
 }
 .header div{
     display: flex;
@@ -39,7 +32,7 @@ img{
 }
 .menu ul{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 .menu a{
     color: black;
@@ -49,7 +42,51 @@ img{
     width: 33.3%;
     text-align: center;
 }
+.logo img{
+    width: 25%;
+}
 .search{ 
     width: 33.3%;
 }
+.search button{
+    color: white;
+    background-color: #000;
+    padding: 0 5px;
+}
 
+/* banner */
+.banner img{
+    width: 100%;
+}
+/* title */
+.title h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* section1 */
+.col-6{ 
+    position: relative;
+    min-height: 1px;
+    padding-left: 50px;
+    float: left;
+    width: 50%;
+}
+.col-6 img{
+    width: 100%;
+}
+
+.col-3{ 
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 25%;
+}
+
+.sec1-left div{
+    display: flex;
+}
+.sec1-left img{
+    padding-right: 5px;
+}
