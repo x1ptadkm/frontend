@@ -11,6 +11,9 @@ noBooStrap thì copy CSS paste vào
 width: chiều rộng
 text-align: căn chỉnh văn bản theo chiều ngang
 padding: là khoảng cách giữa nội dung bên trong một phần tử và đường viền của phần tử đó
+gap: khoảng cách giữa các phần tử vd: "Home About Men Women Sale Contact"
+align-items: hàng dọc
+justify-content: hàng ngang
 
 Extension web:
 - Paper rule https://chromewebstore.google.com/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?fbclid=IwY2xjawGpv7ZleHRuA2FlbQIxMAABHbD_MivXS-NsO2NlbkqoGv9p9nhtGIhPVsWe6nssZ8oT8t3SIMdFBkt3yg_aem_maAJW1LeyrIlAjxewyCEgA

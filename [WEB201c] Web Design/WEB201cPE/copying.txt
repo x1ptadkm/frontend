@@ -21,20 +21,20 @@ table - tr th td border-collapse:collapse;
 <div style="clear: both;"></div>
 
 
-.container-fluid {
+.container-fluid{
     width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
 }
 
-.container {
+.container{
     max-width: 1500px;
     padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
 }
 
 // chia đôi 2 img ( thuong minh xai .col-50)
@@ -76,21 +76,18 @@ width: 50%;
 </div>
 
 /* =========== RESET CSS =========== */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-ul {
+ul{
   list-style: none;
 }
-
-a {
+a{
   text-decoration: none;
 }
-
-img {
+img{
   width: 100%;
 }
 
@@ -127,6 +124,7 @@ img {
     width: 33.3%;
 }
 
+
 /* nav */
 .menu ul{
     display: flex;
@@ -137,11 +135,6 @@ img {
     margin-left: -15px;
     margin-right: -15px;
 }
-
-
-
-
-
 
 
 
@@ -243,8 +236,8 @@ var label = check[i].parentNode.getElementsByTagName("label")[0];
 
 .blueText h2{
     color: #0EC0C3;
+
     margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
 }
-
