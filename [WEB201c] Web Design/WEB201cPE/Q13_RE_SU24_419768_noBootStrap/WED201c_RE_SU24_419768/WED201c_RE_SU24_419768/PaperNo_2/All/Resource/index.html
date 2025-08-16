@@ -76,7 +76,7 @@
 			
 			<p>Choose color : </p>
 			
-			<div>
+			<div class="sec1-shoes">
 				
 				<div>
 					<a href="#"> <img src="images/Brown_ag0288.jpg" alt="Reebok Shoes" /> </a>
@@ -90,7 +90,7 @@
 			
 			<p>Choose size : </p>
 			
-			<div>
+			<div class="sec1-size">
 			
 				<a href="#"> <div> 38 </div> </a>
 				<a href="#"> <div> 39 </div> </a>
@@ -102,7 +102,7 @@
 				
 			</div>
 			
-			<div><!--content form-->
+			<div class="content-form"><!--content form-->
 				
 				<h2> Enter order information</h2>
 				
@@ -120,8 +120,8 @@
 						<input type="email" name="user" placeholder="Enter Your Address" class="size" />
 					</div>
 
-					<div>
-						<input type="submit" value="Send" />
+					<div id="submit-button">
+						<input type="submit" value="Send" onclick="clickButton()" />
 					</div>
 
 				</form>
@@ -135,13 +135,13 @@
 	</div> <!-- Finish Best Seller content-->
 	
 	
-	<div> <!--content title-->
+	<div class="title1"> <!--content title-->
 		
 		<h1>SUGGESTIONS FOR YOU</h1>
 		
 	</div> <!-- Finish content title-->
 	
-	<div> <!--The content of SUGGESTIONS FOR YOU-->
+	<div class="suggestions"> <!--The content of SUGGESTIONS FOR YOU-->
 		
 		<div>
 			
@@ -188,7 +188,7 @@
 	</div> <!-- Finish The content of SUGGESTIONS FOR YOU-->
 	
 	
-	<div> <!--content footer-->
+	<div class="footer"> <!--content footer-->
 
 		<p>Email : ReebokShoes@gmail.com</p>
 		<p>Address: 15 Nguyen Van Luong, Go Vap District, HCMC</p>
@@ -197,7 +197,13 @@
 	</div> <!-- Finish content footer-->
 	
 </div> <!-- Finish content div wrapper-->		
-	
+	<script>
+		let text;
+		function clickButton(){
+			text=prompt("Enter your phone!", text)
+			alert("The store will contact you as soon as possible via phone number:  " + text)
+		}
+	</script>
 </body>
 </html>
 

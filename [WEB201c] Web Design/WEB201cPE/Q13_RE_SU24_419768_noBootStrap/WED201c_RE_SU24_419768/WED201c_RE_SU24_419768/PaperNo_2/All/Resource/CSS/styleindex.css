@@ -61,8 +61,7 @@ img{
 /* title */
 .title h1{
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 20px 0 20px 0;
 }
 
 /* section1 */
@@ -88,5 +87,104 @@ img{
     display: flex;
 }
 .sec1-left img{
-    padding-right: 5px;
+    padding: 0 5px 0 0;
+}
+
+.sec1-right h2{
+    margin-bottom: 15px;
+}
+.sec1-right h2 span{
+    color: rgb(240, 167, 32);
+}
+.sec1-shoes{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 20px 30px;
+}
+.sec1-shoes img{
+    width: 100%;
+    border: 1px solid black;
+}
+.sec1-right p{
+    margin-top: 20px;
+}
+
+.sec1-size{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 20px 30px;
+}
+.sec1-size div{
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* content */
+.content-form{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 65%;
+    height: 700px;
+}
+.content-form h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.content-form input[type="text"],
+.content-form input[type="email"]{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.content-form input[type="submit"]{
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
+}
+
+/* suggestions */
+.title1 h1{
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+.suggestions{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 50px;
+    gap: 30px;
+}
+.suggestions div{
+    background-color: rgba(242, 233, 220, 0.435);
+    padding-bottom: 15px;
+}
+.suggestions img{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 25px;
+}
+.suggestions p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.suggestions p{
+    text-align: center;
+}
+.suggestions h2{
+    text-align: center;
+    color: rgb(231, 96, 96);
+    margin-top: -5px;
+}
+
+/* footer */
+.footer{
+    margin-top: 20px;
+    background-color: rgb(66, 64, 64);
+    padding: 10px
+}
+.footer p, h4{
+    text-align: center;
+    color: white;
+    padding: 10px 0 10px 0;
 }

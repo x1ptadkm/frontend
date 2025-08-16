@@ -74,6 +74,11 @@ table - tr th td border-collapse:collapse;
 	padding-right: 0;
 }
 
+
+.sec1-right h2 span{
+    color: rgb(240, 167, 32);
+}
+
 // 50% chia 4 nên width 25%
 .col-3{ 
     position: relative;
@@ -83,6 +88,12 @@ table - tr th td border-collapse:collapse;
     float: left;
     width: 25%;
 }
+
+
+/*=====border=====*/
+border: 1px solid black;
+border-radius: 10px //cong
+
 
 <div class="form-item">
 <label></label>
