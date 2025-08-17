@@ -1,0 +1,59 @@
+WAN: Wide Area Network
+LAN: Local Area Network
+FTP: File Transfer Protocol
+W3C: World Wide Web Consortium
+HTTP: Hypertext Transfer Protocol
+TCP: Transmistion Control Protocol
+SSH: Secure Shell
+DNS: Domain Name System
+IP: Internet Protocol
+SMTP: Simple Mail Transfer Protocol
+DTD: Document type definition
+URL: Uniform Resource Locator
+
+
+typeface  font family
+font-size  rem
+top-level  rem
+not ex  px
+smaller  vmin
+not a fluid  px
+vh  viewpoint height
+1vw = 1% of viewport width
+fix the size --> mm
+
+bold: font-weight: bold;
+capital: text-transform: capitalize
+created rounded corners: border-radius: 30px;
+open a link in a new tab/browser window: <a herf=”url” target=”_blank”>
+insert a search icon: <span class=”glyphicon glyphicon-search”></span>
+
+never scale up  max-witdh:100%
+The Flexible Box Layout
+parent element  %
+px px px px  trên phải dưới trái
+#  id
+
+Descendant selectors
+nav a{
+…}
+are more general than child selectors
+Nav>a{
+..}  True
+Descendant selector (nav a) chọn mọi phần tử a bên trong nav bất kể sâu bao nhiêu cấp. Child selector (nav > a) chỉ chọn các phần tử alà con trực tiếp của nav
+
+Hide the image: img{display:none;}
+Center: margin :0 auto
+
+Variables allow you to save data
+form-handlder  submit
+
+var fruits;
+fruits=[“Banana”, “Orange”, “Apple”, “Mango”];
+	Insert: Window.alert(fruits.length);
+
+Box Model: width/height/border/padding
+
+well-formed: doctype, head, body
+
+not use of parentheses: innerHTML
