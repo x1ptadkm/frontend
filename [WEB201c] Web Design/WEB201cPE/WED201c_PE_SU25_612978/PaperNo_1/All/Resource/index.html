@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vietnamese cuisine</title>
+
+<!--Embed CSS here-->
+<link rel="stylesheet" href="CSS/styleindex.css">
+
+</head>
+
+
+<body>
+
+	<div> <!--div contains all the web page content-->
+
+		<div class="header"> <!--div contains header content-->
+
+			<div class="logo">
+				<a href="index.html"><img src="images/Logo.PNG"></a>
+			</div>
+
+			<div class="search">
+			
+				<form>
+					<input type="text" placeholder="Search in website">
+					<button type="submit">Search</button>
+				</form>
+
+			</div>
+
+		</div> <!-- finish div contains header content-->
+		
+	<!--------------------------------------------------------------------------------------------------------------->	
+
+		<div class="menu"> <!--div contains menu content-->
+
+		  <ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>  
+
+		</div> <!-- finish div contains menu content-->
+
+	<!--------------------------------------------------------------------------------------------------------------->	
+	
+		<div class="sec1"> <!--div contains banner and  Your registration information content-->
+
+			<div class="sec1-left col-6"> <!--div contains banner content-->
+				<img src="images/nhahang.png" alt="Vietnamese cuisine" />
+			</div> <!--finish div contains banner content-->
+
+			<div class="sec1-right col-4"> <!--div contains Your registration information content-->
+			 
+				 <h2>Your registration information</h2>
+
+				 <form action="#" method="post">
+
+					<div>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+					</div>
+
+					<div>
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+					</div>
+
+					<div>
+						<label for="phone"> Your Phone</label>
+						<input type="text" id="phone" name="phone" placeholder="Your phone number.."/>
+					</div>
+
+					<div>
+						<input type="submit" value="Send" />
+					</div>
+
+
+				  </form>
+
+			</div> <!-- finish div contains Your registration information content-->
+
+		</div> <!-- Finish div contains banner and  Your registration information content-->
+
+		<!--------------------------------------------------------------------------------------------------------------->
+
+		<div class="sec2"> <!--div contains LIST OF DISHES content-->
+
+			<h1>LIST OF DISHES</h1>
+
+			<div class="sec2-img">
+
+				<div class="sec2-img-1 col-1">
+
+					<img src="images/goitom.jpg" alt="Bamboo shoot, shrimp and meat salad" />
+
+					<h3>Bamboo shoot, shrimp and meat salad</h3>
+					<h3>Price : $10</h3>
+
+					<div>
+						 <button>Add to Cart</button>
+					</div>
+
+				</div>
+
+				<div class="sec2-img-2 col-2">
+
+					<img src="images/Nemranchagio.jpg" alt="Fried spring rolls" />
+
+					<h3>Fried spring rolls</h3>
+					<h3>Price : $8</h3>
+
+					<div>
+						<button>Add to Cart</button>
+					</div>
+
+				</div>
+
+	
+				<div class="sec2-img-3 col-3">
+
+					<img src="images/Canhga.jpg" alt="Grilled chicken wings with salt and chili" />
+
+					<h3>Grilled chicken wings with salt and chili</h3>
+					<h3>Price : $14</h3>
+
+					<div>
+						<button>Add to Cart</button>
+					</div>
+
+				</div>
+
+				<div class="sec2-img-4 col-4">
+
+					<img src="images/Lathaichuacay.jpg" alt="Thai hot and sour hot pot" />
+
+					<h3>Thai hot and sour hot pot</h3>
+					<h3>Price : $25</h3>
+
+					<div>
+						<button>Add to Cart</button>
+					</div>
+
+				</div>
+			</div>
+			
+			<div style="clear: both ;" > </div>
+
+		</div> <!--div contains LIST OF DISHES content-->
+
+
+	   <!------------------------------------------------------------------------------------------------------------------->
+
+		 <div class="cart"> <!--div contains cart content-->
+
+			<h2>Your Cart</h2>
+			
+			<div>
+
+				<ul>
+					<p>Your cart is empty.</p>
+				</ul>
+				
+				<h3>Total: $0</h3>
+
+			</div>
+			
+		 </div> <!-- finish div contains cart content-->
+
+	   <!------------------------------------------------------------------------------------------------------------------->   
+
+		<div class="footer"> <!--div contains footer content-->
+
+					<p>Email : Vietnamesecuisine@gmail.com</p>
+					<p>Address: 100 Phan Van Tri, Binh Thanh District, HCMC</p>
+					<h5>&copy; Copyright 2025. Vietnamesecuisine.com</h5>
+
+		</div> <!-- finish div contains footer content-->
+		
+	</div> <!--finish div contains all the web page content-->
+	
+	<!------------------------------------------------------------------------------------------------------------------->
+	
+	<script>
+		//Write your Javascript code here
+		let text;
+		function clickButton(){
+			text=prompt("Enter your phone!", text)
+			alert("The store will contact you as soon as possible via phone number:  " + text)
+		}
+
+		// <div id="submit-button">
+		// 	<input type="submit" value="Add to Cart" onclick="clickButton()" />
+		// </div>
+	</script>
+	
+	
+</body>
+
+</html>
+
+
