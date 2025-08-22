@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Apple Mobile</title>
+
+<!--Embed your css here-->
+<link rel="stylesheet" href="css/styleindex.css" />
+
+
+</head>
+
+<body>
+	
+	<div class="container-fluid"> <!--div contains all the web page content-->
+		
+		<div class="header"> <!--div contains header content-->
+
+			<div class="logo">
+				<a href="index.html"><img src="images/logochanel.png"></a>
+			</div>
+
+			<div class="menu"> 
+			  <ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Product</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Contact</a></li>
+			  </ul>  
+			</div>
+
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Search in website">
+					<button type="submit">Search</button>
+				</form>
+
+			</div>
+
+		</div> <!--div contains header content-->
+		
+		<!-------------------------------------------------------------------------------------------------------------->
+
+		<div> <!--div contains Best Sellers content-->
+
+			<h1 class="content-title">Best Sellers</h1>
+
+			<div class="seller-content">
+				<div class="left-content">
+					<img src="images/iphone16prmax.png" alt="Iphone 16 pro Max" />
+				</div>
+	
+				<div class="middle-content">
+					<img src="images/camera.png" alt="Camera" />
+					<img src="images/Bosac.png" alt="Charger" />
+	
+				</div>
+	
+				<div class="right-content">
+					<h2>Iphone 16 pro Max - 521GB - $1800</h2>
+	
+					<p>
+						The iPhone 16 Pro Max boasts an impressive camera system designed for photography enthusiasts. It features a 48MP primary sensor with quad pixels and a 24mm equivalent f/1.78 aperture lens, offering excellent detail and dynamic range. Additionally, it includes a 48MP ultra-wide camera with a 13mm equivalent lens and a 12MP telephoto camera with a 120mm equivalent lens. The telephoto lens uses a tetraprism design for enhanced optical zoom.
+					</p>
+	
+					<p>
+						This camera system excels in various lighting conditions, from bright outdoor settings to low-light environments. It also delivers outstanding video quality with 4K resolution and a variable frame rate of 60fps. The iPhone 16 Pro Max is perfect for capturing stunning photos and videos, whether you're shooting landscapes, portraits, or action shots.
+	
+					</p>
+	
+						<div class="button-container">
+							<button class="content-button" onclick="submit('Iphone 16 pro Max - 521GB - $1800', '1800')">Add to Cart</button>
+						</div>
+	
+				</div>
+			</div>
+
+			<div style="clear: both;"></div>
+			
+		</div> <!--div contains Best Sellers content-->
+
+		<!-------------------------------------------------------------------------------------------------------------->
+
+		<div> <!--div contains Accessories content-->
+
+			<h1 class="content-title">Accessories</h1>
+
+			<div class="accessories-content">
+				<div  class="accessories airpod"> 
+				
+					<h3>Airpod 4 - $150</h3>
+					
+					<img src="images/Airpod4.png" alt="Airpod 4"/>
+					
+					<div class="button-container">
+						<button  class="content-button" onclick="submit('Airpod 4 - $150', '150')">Add to Cart</button>
+					</div>
+					
+				</div>
+	
+				<div  class="accessories airtag">
+					<h3>AirTag - $35</h3>
+					
+					<img src="images/Airtag.png" alt="Airtag"/>
+					
+					<div class="button-container">
+						<button class="content-button" onclick="submit('AirTag - $35', '35')">Add to Cart</button>
+					</div>
+	
+				</div>
+	
+				<div  class="accessories apple-watch">
+				
+					<h3>Apple Watch Series 10 - $1000</h3>
+					
+					<img src="images/AppleWatch10.png" alt="Apple Watch Series 10"/>
+					
+					<div class="button-container">
+						<button class="content-button" onclick="submit('Apple Watch Series 10 - $1000', '1000')">Add to Cart</button>
+					</div>
+					
+				</div>
+	
+				<div class="accessories iphone" >
+					<h3>Iphone 16 Pro Max Bumper - $12</h3>
+					
+					<img src="images/oplung.png" alt="Iphone 16 Pro Max Bumper"/>
+					
+					<div class="button-container">
+						<button class="content-button" onclick="submit('Iphone 16 Pro Max Bumper - $12', '12')">Add to Cart</button>
+					</div>
+					
+				</div>
+			</div>
+
+			<div style="clear: both;"></div>
+
+		</div>	<!-- finish div contains Accessories content-->
+
+		<!-------------------------------------------------------------------------------------------------------------->
+
+		 <div class="cart"> <!--div contains Your Cart content-->
+
+			<h2>Your Cart</h2>
+			
+			<div class="desc">
+
+				<ul id="ans">
+					<p>Your cart is empty.</p>
+				</ul>
+				<h3 id="total">Total: $0</h3>
+
+			</div>
+			
+		 </div> <!-- finish div contains Your Cart content-->
+
+	   <!--------------------------------------------------------------------------------------------------------------->   
+
+		<div class="footer"> <!--div contains footer content-->
+
+			<p>Email : Apple@gmail.com</p>
+			<p>Address: 100 Dien Bien Phu,District 3, HCMC</p>
+			<p>Phone : 012456789222</p>
+
+		</div> <!-- finish div contains footer content-->
+		
+	</div> <!-- finish div contains all the web page content-->
+
+ 	<!--------------------------------------------------------------------------------------------------------------->   
+	
+	<script>
+		//Write your Javascript code here
+		var cart = []; 
+		var totalPrice = 0;
+		var cnt = 0;
+		function submit(desc, accessories_price) {
+			totalPrice += parseInt(accessories_price);
+			cart[cnt++] = desc; 
+			if(cart.length != 0){
+				document.getElementById("ans").innerHTML = "";
+				document.getElementById("total").innerHTML = "Total: " + parseInt(totalPrice) +"$";
+				document.getElementById("ans").style.listStyle = "disc";
+				document.getElementById("ans").style.margin = "30px 0px 30px 80px";
+				document.getElementById("ans").style.fontSize = "18px";
+				document.getElementById("ans").innerHTML = "<li>" + cart.join("<li>");
+			} else {
+				cart.join("<li>")
+			}
+		}
+	
+	</script>
+	
+	
+	
+	
+</body>
+
+
+</html>
+
+
